@@ -6,6 +6,9 @@ check.module.cas.name=CAS
 # Mail server settings
 mail.server.host=smtp.example.com
 mail.server.port=25
+mail.ssl=false
+mail.username=
+mail.password=
 mail.from.address=noreply@example.com
 
 # Send notification to:

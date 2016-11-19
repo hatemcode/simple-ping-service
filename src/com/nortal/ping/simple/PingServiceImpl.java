@@ -87,6 +87,9 @@ public class PingServiceImpl implements PingService {
         pingMail =
                 new PingMail(properties.getProperty("mail.server.host"),
                              Integer.valueOf(properties.getProperty("mail.server.port")),
+                             Boolean.valueOf(properties.getProperty("mail.ssl")),
+                             properties.getProperty("mail.username"),
+                             properties.getProperty("mail.password"),
                              properties.getProperty("mail.from.address"),
                              properties.getProperty("mail.to.address").split(","),
                              properties.getProperty("mail.subject.prefix"));
